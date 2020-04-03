@@ -2,13 +2,26 @@ li {
   max-width: 600px;
   margin: 30px 0;
   border-radius: 5px;
-  box-shadow: -9px -9px 16px white, 9px 9px 16px rgb(168, 168, 168);
+  box-shadow: -9px -9px 16px rgb(245, 245, 245), 9px 9px 16px rgb(168, 168, 168);
+  transition: 0.3s;
+}
+
+li:hover {
+  box-shadow: -3px -3px 6px white, 3px 3px 6px rgb(168, 168, 168);
+}
+
+li:hover .admin {
+  background: rgba(255, 105, 51);
+}
+
+li:hover .marketing {
+  background: rgba(85, 221, 22);
 }
 
 .header {
   display: flex;
   justify-content: space-between;
-  box-shadow: 0px 2px 16px rgba(168, 168, 168, 0.295);
+  box-shadow: 0px 1px 8px rgba(197, 197, 197, 0.295);
 }
 
 .label,
@@ -24,4 +37,18 @@ li {
 
 .content {
   padding: 20px;
+}
+
+.admin {
+  background: rgba(255, 105, 51, 0.6);
+  color: white;
+  border-radius: 5px;
+  transition: 0.3s;
+}
+
+.marketing {
+  background: rgba(85, 221, 22, 0.6);
+  color: white;
+  border-radius: 5px;
+  transition: 0.3s;
 }

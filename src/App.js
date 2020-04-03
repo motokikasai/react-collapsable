@@ -8,8 +8,8 @@ function App() {
     <section>
       <h1>Collapsable List</h1>
       <ul className="App">
-        {data.map(item => {
-          return <Collapsable data={item} />;
+        {data.map((item, i) => {
+          return <Collapsable data={item} key={item.id} />;
         })}
       </ul>
     </section>
