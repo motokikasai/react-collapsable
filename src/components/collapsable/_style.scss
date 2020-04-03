@@ -11,17 +11,17 @@ li:hover {
 }
 
 li:hover .admin {
-  background: rgba(255, 105, 51);
+  background: rgb(255, 105, 51);
 }
 
 li:hover .marketing {
-  background: rgba(85, 221, 22);
+  background: rgb(85, 221, 22);
 }
 
 .header {
   display: flex;
   justify-content: space-between;
-  box-shadow: 0px 1px 8px rgba(197, 197, 197, 0.295);
+  box-shadow: 0px 1px 8px rgba(197, 197, 197, 0.3);
 }
 
 .label,
@@ -40,15 +40,15 @@ li:hover .marketing {
 }
 
 .admin {
-  background: rgba(255, 105, 51, 0.6);
+  background: rgba(255, 105, 51, 0.8);
   color: white;
-  border-radius: 5px;
+  border-radius: 5px 5px 0 0;
   transition: 0.3s;
 }
 
 .marketing {
-  background: rgba(85, 221, 22, 0.6);
+  background: rgba(85, 221, 22, 0.8);
   color: white;
-  border-radius: 5px;
+  border-radius: 5px 5px 0 0;
   transition: 0.3s;
 }

@@ -5,8 +5,7 @@ class Collapsable extends React.Component {
     super(props);
 
     this.state = {
-      on: true,
-      off: false
+      tab: "closed"
     };
 
     this.handleClick = this.handleClick.bind(this);
