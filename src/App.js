@@ -1,10 +1,12 @@
 import React from "react";
 import "./styles/App.css";
+import data from "../src/data.json";
+import Collapsable from "./components/collapsable";
 
 function App() {
   return (
     <div className="App">
-      <h1>Hello Collapables</h1>
+      <Collapsable data={data} />
     </div>
   );
 }
