@@ -1,0 +1,27 @@
+li {
+  max-width: 600px;
+  margin: 30px 0;
+  border-radius: 5px;
+  box-shadow: -9px -9px 16px white, 9px 9px 16px rgb(168, 168, 168);
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  box-shadow: 0px 2px 16px rgba(168, 168, 168, 0.295);
+}
+
+.label,
+.caret {
+  display: inline-block;
+  font-size: 1.4rem;
+  padding: 20px;
+}
+
+.caret {
+  margin-right: 20px;
+}
+
+.content {
+  padding: 20px;
+}

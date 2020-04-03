@@ -2,7 +2,9 @@
 
 body {
   display: flex;
-  padding: 100px;
+  padding: 40px;
+  background: #efeeee;
+  color: rgb(59, 59, 59);
 }
 
 ul {
