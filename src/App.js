@@ -5,9 +5,14 @@ import Collapsable from "./components/collapsable";
 
 function App() {
   return (
-    <div className="App">
-      <Collapsable data={data} />
-    </div>
+    <section>
+      <h1>Collapsable List</h1>
+      <ul className="App">
+        {data.map(item => {
+          return <Collapsable data={item} />;
+        })}
+      </ul>
+    </section>
   );
 }
 

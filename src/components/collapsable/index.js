@@ -6,17 +6,10 @@ class Collapsable extends React.Component {
   }
 
   render() {
-    console.log(this.props.data[0].id);
-
     return (
-      <div>
-        <h1>Collapsable List</h1>
-        <ul>
-          {this.props.data.map(item => {
-            return <li key={item.id}>{item.question}</li>;
-          })}
-        </ul>
-      </div>
+      <li>
+        <div key={this.props.data.id}>{this.props.data.question}</div>
+      </li>
     );
   }
 }
