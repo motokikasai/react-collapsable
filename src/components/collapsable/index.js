@@ -22,11 +22,17 @@ class Collapsable extends React.Component {
     return (
       <li>
         <div
-          className={`header ${this.props.data.category}`}
+          className={`header ${this.props.data.category} ${
+            this.state.tab === true ? "edged-header" : ""
+          }`}
           onClick={this.handleClick}
         >
           <span className="label">{this.props.data.question}</span>
-          <span className="caret">&#8910;</span>
+          <span
+            className={`caret ${this.state.tab === true ? "caret-rotate" : ""}`}
+          >
+            &#8910;
+          </span>
         </div>
         {this.state.tab === true ? (
           <div className="content">{this.props.data.answer}</div>
