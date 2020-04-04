@@ -5,14 +5,17 @@ class Collapsable extends React.Component {
     super(props);
 
     this.state = {
-      tab: "closed"
+      tab: false,
     };
 
     this.handleClick = this.handleClick.bind(this);
   }
 
   handleClick() {
-    console.log("Yeeeaaah, clicked!");
+    this.setState((state, props) => {
+      console.log(state.tab);
+      return { tab: !state.tab };
+    });
   }
 
   render() {
@@ -25,7 +28,11 @@ class Collapsable extends React.Component {
           <span className="label">{this.props.data.question}</span>
           <span className="caret">&#8910;</span>
         </div>
-        <div className="content">{this.props.data.answer}</div>
+        {this.state.tab === true ? (
+          <div className="content">{this.props.data.answer}</div>
+        ) : (
+          <div></div>
+        )}
       </li>
     );
   }
