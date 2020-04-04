@@ -1,5 +1,8 @@
+ul {
+  max-width: 530px;
+}
+
 li {
-  max-width: 600px;
   margin: 30px 0;
   border-radius: 5px;
   box-shadow: -9px -9px 16px rgb(245, 245, 245), 9px 9px 16px rgb(168, 168, 168);
@@ -18,6 +21,10 @@ li:hover .marketing {
   background: rgb(85, 221, 22);
 }
 
+.header-container {
+  display: flex;
+}
+
 .header {
   display: flex;
   justify-content: space-between;
@@ -29,6 +36,10 @@ li:hover .marketing {
   display: inline-block;
   font-size: 1.4rem;
   padding: 20px;
+}
+
+.label {
+  margin-right: 60px;
 }
 
 .caret {
